@@ -1,0 +1,10 @@
+.button {
+    height: 40px;
+    padding: 10px 24px;
+    background-color: #F41B3B;
+    border-radius: 3px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}

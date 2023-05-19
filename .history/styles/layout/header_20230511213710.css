@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header__logo {
+    width: 170px;
+    margin-right: 64px;
+}
+
+.header__menu {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.header__menu__item {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 24px;
+    color: #807E81;
+}
+
+.header__menu__item svg{
+    margin-right: 8px;
+}

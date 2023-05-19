@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 40px 64px;
+    position: absolute;
+}
+
+.header__logo {
+    width: 170px;
+    margin-right: 64px;
+}
+
+.header__menu {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.header__menu__item {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 24px;
+    color: #807E81;
+}
+
+.header__menu__item svg{
+    margin-right: 8px;
+    /* fill = troca cor do icone svg */
+    fill: #807E81;
+}
+
+.header__menu__item--active {
+    color: #FFFFFF;
+}
+
+.header__menu__item--active svg {
+    fill: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 18px;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+    
+    .header__menu {
+        /* order: 3; = funciona apenas no display flex ou no display grid, no elemento filho, muda a ordem do indice do elemento */
+        order: 3;
+        margin-top: 40px;
+        overflow: auto;
+        /* white-space: nowrap; = não terá quebra de linha se tiver espaço em branco */
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .header__menu__item {
+        font-size: 16px;
+    }
+
+    .header__menu::-webkit-scrollbar {
+        display: none;
+    }
+}
